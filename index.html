@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personalize seu Roteiro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Personalize seu Roteiro</h1>
+    <h2>Escolha seu destino e crie uma experiência única!</h2>
+  </header>
+
+  <main>
+    <form id="roteiro-form">
+      <!-- Escolha do roteiro -->
+      <label for="roteiro">Escolha o Roteiro:</label>
+      <select id="roteiro" name="roteiro">
+        <option value="juruzal">Juruzal</option>
+        <option value="curitibereira">Curitibereira</option>
+        <option value="ilha-grande">Ilha Grande do Acacajé</option>
+      </select>
+
+      <!-- Tipo de turismo -->
+      <label for="tipo-turismo">Tipo de Turismo:</label>
+      <select id="tipo-turismo" name="tipo-turismo">
+        <option value="aventura">Aventura</option>
+        <option value="natureza">Natureza</option>
+        <option value="gastronomico">Gastronômico</option>
+      </select>
+
+      <!-- Nome do Turista -->
+      <label for="nome">Seu Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+
+      <!-- Observações -->
+      <label for="observacoes">Observações:</label>
+      <textarea id="observacoes" name="observacoes" placeholder="Conte-nos mais sobre sua ideia..."></textarea>
+
+      <!-- Botão -->
+      <button type="submit">Gerar Roteiro</button>
+    </form>
+
+    <!-- Resultado -->
+    <section id="resultado">
+      <h3>Resultado do seu roteiro:</h3>
+      <p id="output"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
